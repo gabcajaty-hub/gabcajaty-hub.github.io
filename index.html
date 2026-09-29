@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabriel Cajaty | Portfólio</title>
+  <meta name="description" content="Portfólio de Gabriel Cajaty, desenvolvedor web. Projetos, sobre mim e contato.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progresso" id="progresso"></div>
+  <a class="skip" href="#projetos">Ir para os projetos</a>
+
+  <header class="topo">
+    <a class="logo" href="#inicio" aria-label="Gabriel Cajaty, início">GC</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="tema-btn" id="temaBtn" aria-label="Alternar tema claro e escuro"></button>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-texto">
+        <p class="ola">Olá, eu sou o Gabriel</p>
+        <h1>Eu transformo ideias em sistemas que funcionam no dia a dia.</h1>
+        <p class="digitando">Sou <span id="digitando"></span><span class="cursor">|</span></p>
+        <p class="hero-sub">Desenvolvedor web focado em soluções práticas para pessoas e pequenos negócios.</p>
+        <div class="hero-acoes">
+          <a class="btn btn-principal" href="#projetos">Ver projetos</a>
+          <a class="btn btn-borda" href="#contato">Falar comigo</a>
+        </div>
+      </div>
+
+      <figure class="hero-foto" id="heroFoto">
+        <div class="foto-brilho"></div>
+        <img src="imagens/foto.jpg.jpeg" alt="Foto de Gabriel Cajaty" width="480" height="600">
+        <span class="chip chip-1">HTML</span>
+        <span class="chip chip-2">CSS</span>
+        <span class="chip chip-3">JavaScript</span>
+      </figure>
+    </section>
+
+    <section id="sobre" class="secao sobre">
+      <h2>Sobre mim</h2>
+      <div class="sobre-grid">
+        <p>Estou construindo minha trajetória em programação com HTML, CSS e JavaScript. Gosto de criar ferramentas que resolvem problemas reais, como controle financeiro e gestão de serviços.</p>
+        <ul class="skills" aria-label="Tecnologias">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li><li>VS Code</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projetos" class="secao">
+      <h2>Projetos</h2>
+      <div class="filtros" role="group" aria-label="Filtrar projetos">
+        <button class="filtro ativo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="web">Web</button>
+        <button class="filtro" data-filtro="app">Aplicativos</button>
+      </div>
+      <div class="projetos" id="listaProjetos"></div>
+    </section>
+
+    <section id="contato" class="secao contato">
+      <h2>Vamos conversar?</h2>
+      <p>Tem uma ideia ou uma vaga? Me chame por um destes canais.</p>
+      <div class="hero-acoes">
+        <a class="btn btn-principal" href="mailto:gabcajaty@gmail.com">Enviar e-mail</a>
+        <a class="btn btn-borda" href="https://wa.me/5585992421457" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-borda" href="https://github.com/seuusuario" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Gabriel Cajaty. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
